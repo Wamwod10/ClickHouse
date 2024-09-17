@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    height: fit-content;
+    background: #f8f8f8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    & .container {
+        position: relative;
+    }
+
+    &__link {
+        font-size: 16px;
+        color: #000;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        width: 250px;
+        margin-top: 35px;
+    }
+
+    &__list-sec {
+        width: 300px;
+    }
+
+    &__box {
+        margin-top: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    &__insta-logo {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+}

@@ -1,0 +1,12 @@
+@mixin media($size) {
+    @media (max-width:"#{$size}px") {
+        @content
+    }
+    
+    // @include media(1440);
+    // @include media(960);
+    // @include media(760);
+    // @include media(450);
+    // @include media(400);
+    // @include media(350);
+}

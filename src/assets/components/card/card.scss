@@ -1,0 +1,88 @@
+@import '/src/assets/components/media.scss';
+
+.card {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &__title-box {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+
+        @include media(587) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: "jost";
+
+        @include media(434) {
+            font-size: 28px;
+        }
+
+        @include media(345) {
+            font-size: 24px;
+        }
+    }
+
+    &__main-link {
+        font-size: 18px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        margin-top: 12px;
+        transition: 0.2s;
+
+        &:hover {
+            color: #ff9900;
+        }
+    }
+
+    &__title-icon {
+        font-size: 12px;
+        font-weight: 400;
+        transition: 0.1s;
+
+        &:hover {
+            color: #ff9900;
+        }
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 25px;
+        margin-top: 45px;
+
+        @include media(520) {
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 20px;
+        }
+    }
+    
+    &__button{
+        color: #fff;
+        border: 2px solid #c7c7c7 inset;
+        padding: 10px 50px;
+        border-radius: 5px;
+        background: #ff9900;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    
+    &__load{
+        text-align: center;
+        color: #ff9900bf;
+        margin-top: 10px;
+    }
+}
