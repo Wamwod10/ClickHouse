@@ -1,5 +1,5 @@
 import React from 'react';
-import './cardBox.scss';
+import './CardBox.scss';
 
 const CardBox = ({ img, name }) => {
     return (
